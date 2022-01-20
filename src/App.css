@@ -14,6 +14,8 @@ body {
   --primary-red-hover: #f33501;
   --primary-dark: rgb(52, 58, 64);
   --primary-black: #000000;
+  --primary-transparent-black: rgba(0,0,0,0.7);
+
 }
 
 .App {
@@ -279,6 +281,22 @@ margin-bottom: 1.875rem;
 color: var(--primary-orange);
 }
 
+.testimonials{
+  background-image: "./images/image.jfif";
+  background-size: cover;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 4rem;
+  background-color: var(--primary-black);
+}
+
+.testimonials{
+color: var(--primary-orange);
+text-transform: uppercase;
+padding: 3rem 0;
+}
+
 .portfolio-image {
   width: 15rem;
   border: 1px solid var(--primary-orange);
@@ -360,3 +378,48 @@ height: 90%;
   }
 }
 
+.testimonials-content{
+text-align: center;
+background-color: var(--primary-transparent-black);
+max-width: 53.125rem;
+margin: 0 auto 2rem auto;
+}
+
+.myCarousel {
+  background: transparent;
+  color: var(--primary-white);
+  margin-top: -6%;
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-right: 5%;
+  height: 17.875rem;
+}
+
+.carousel .slide img {
+  width: 10rem !important;
+  border-radius: 50%;
+}
+
+.myCarousel h3 {
+color: var(--primary-orange);
+font-weight: 600;
+text-transform: uppercase;
+}
+
+.myCarousel p{
+color: var(--primary-grey);
+}
+
+.carousel .slide {
+background: transparent !important;
+height: 100% !important;
+padding-top: 2rem !important;
+}
+
+.carousel-root {
+margin: auto !important;
+margin-top: 3% !important;
+}
