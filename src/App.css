@@ -15,6 +15,7 @@ body {
   --primary-dark: rgb(52, 58, 64);
   --primary-black: #000000;
   --primary-transparent-black: rgba(0,0,0,0.7);
+  --primary-green: green;
 
 }
 
@@ -417,9 +418,107 @@ color: var(--primary-grey);
 background: transparent !important;
 height: 100% !important;
 padding-top: 2rem !important;
+
 }
 
 .carousel-root {
 margin: auto !important;
 margin-top: 3% !important;
+}
+
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+color: var(--primary-orange);
+padding: 1.3rem 0;
+text-transform: uppercase;
+}
+
+.contacts p {
+font-size: 1.2rem;
+color: var(--primary-light-grey);
+}
+
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+ color: var(--primary-orange);
+ outline: 0 !important;
+ box-shadow: none !important;
+ margin-bottom: 1rem;
+ padding-left: 0 !important;
+}
+
+.contacts .container {
+  padding: 4rem 0 ;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea {
+  height: 12.2rem !important;
+}
+
+.contact-btn {
+  width: 100%;
+  margin: 1rem 0 0 0;
+  background: none;
+}
+
+.contact-btn:hover {
+background: var(--primary-red-hover);
+}
+@media (max-width: 768px) {
+  .contacts .container {
+    padding: 0 1rem;
+  }
+  .contacts p {
+    padding: 0 0.4rem;
+  }
+}
+
+.line {
+position: relative;
+width: 0;
+height: 0.125rem;
+background: var(--primary-orange);
+display: inline-block;
+top: -0.8rem;
+}
+
+input:focus+.line, textarea:focus+.line{
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.error-message{
+  color: var(--primary-white);
+  background: var(--primary-red-hover);
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-green);
 }
