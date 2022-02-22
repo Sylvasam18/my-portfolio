@@ -78,7 +78,7 @@ nav ul li {
   background-image: url(./images/image.jfif);
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
 }
 .main-info {
@@ -521,4 +521,24 @@ textarea.form-control {
 .success-message {
   font-weight: 900;
   color: var(--primary-green);
+}
+
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+text-decoration: none;
+color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+text-decoration: none;
+color: var(--primary-orange);
+cursor: pointer;
+}
+.footer p {
+margin-bottom: 0;
 }
