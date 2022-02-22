@@ -48,7 +48,7 @@ const Footer = () => {
                   <div className='d-flex justify-content-center'>
                       <FacebookMessengerShareButton
                       url={'https://www.linkedin.com/in/elazakemhe-samson-221564190/'}
-                      quote={'Fullstack developer'}
+                      quote={'Full stack developer'}
                       hashtag='#Javascript'>
                           <FacebookIcon className='mx-3' size={36}/>
                       </FacebookMessengerShareButton>
